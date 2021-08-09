@@ -7,6 +7,12 @@ optionally, a prompt on the left.  When the user adjusts the slider position,
 its value is printed to stdout.  wjt grabs keyboard and mouse input while
 running.  wjt was inspired by, and its code is based on, dmenu.
 
+### Xresources
+
+This version of wjt has been patched to read Xresource settings based on
+[this](https://dwm.suckless.org/patches/xresources/) dwm patch.
+The settings read are defined by the `resources` variable.
+
 ### Dependencies
 
 - Xlib

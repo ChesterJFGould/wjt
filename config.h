@@ -12,7 +12,7 @@ static int jump             = 10;   /* -j:  large adjustment */
 static const char *prompt   = NULL; /* -p:  prompt to the left of slider */
 static const char *special  = NULL; /* -z:  special text */
 static const char *fonts[]  = {     /* -f:  font set */
-	"monospace:size=10"
+	"LiterationMono Nerd Font:pixelsize=14"
 };
 
 static char prompt_fg[] = "#000000";
@@ -29,11 +29,13 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeValue]  = { value_fg, value_bg }, /* fg: value label, bg: slider up to value */
 };
 
+
 ResourcePref resources[] = {
 	{ "promptfgcolor", STRING, &prompt_fg },
 	{ "promptbgcolor", STRING, &prompt_bg },
 	{ "sliderfgcolor", STRING, &slider_fg },
-	{ "sliderfgcolor", STRING, &slider_fg },
+	{ "sliderbgcolor", STRING, &slider_bg },
 	{ "valuefgcolor", STRING, &value_fg },
-	{ "valuefgcolor", STRING, &value_fg },
+	{ "valuebgcolor", STRING, &value_bg },
 };
+
